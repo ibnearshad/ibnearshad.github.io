@@ -329,7 +329,8 @@ max-width: 300px;
     .icons .fa-solid {
         font-size: 1.5rem;
     }
-    .circle:nth-child(2) {
-        max-width: 50px; /* Adjust the max-width as needed for mobile */
-    }
-}
+.circle:nth-child(2) {
+        max-width: 150px; /* Adjust the max-width as needed for mobile */
+        background-size: contain; /* Ensure the background image fits within the container */
+        background-position: center; /* Center the background image */
+    }}
