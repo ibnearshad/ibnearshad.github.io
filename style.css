@@ -332,7 +332,7 @@ max-width: 300px;
 .circle:nth-child(2) {
         max-width: 200px; /* Adjust the max-width as needed for mobile */
         background-size: contain; /* Ensure the background image fits within the container */
-        background-position: center top; /* Center the background image */
+        background-position: top; /* Center the background image */
     }
     .circle:nth-child(1) {
         display: none; /* Remove the first circle for mobile view */
