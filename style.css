@@ -332,7 +332,7 @@ max-width: 300px;
 .circle:nth-child(2) {
         max-width: 200px; /* Adjust the max-width as needed for mobile */
         background-size: contain; /* Ensure the background image fits within the container */
-        background-position: center; /* Center the background image */
+        background-position: center top; /* Center the background image */
     }
     .circle:nth-child(1) {
         display: none; /* Remove the first circle for mobile view */
@@ -345,7 +345,7 @@ max-width: 300px;
         top: auto;
         left: auto;
         transform: none;
-        margin-top: 1rem; /* Add margin for better spacing */
+        margin-top: .5rem; /* Add margin for better spacing */
     }
 
     .navlist {
@@ -355,5 +355,28 @@ max-width: 300px;
     .navlist li {
         margin: 0.5rem 0;
         text-align: left; /* Align navigation items to the left */
+    }
+     .portfolio-container {
+        justify-content: flex-start; /* Align items to the top */
+        background-size: 120%; /* Increase background size to the right */
+    }
+     .navlist {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 1rem;
+        background: #262525;
+        position: relative;
+        z-index: 1;
+    }
+
+    .navlist li {
+        margin: 0.5rem 0;
+        text-align: center; /* Align navigation items to the center */
+    }
+
+    .navlist li a {
+        background: none;
+        padding: 0.5rem 1rem; /* Add padding for better touchability */
     }
 }
