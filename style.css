@@ -116,12 +116,6 @@ meta[name="viewport"] {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-.content h1 {
-    font-size: 3rem;
-    color: #5db9ee;
-}
-
 .content .detail {
     font-size: 1.1 rem;
     color: #fff;
@@ -235,9 +229,9 @@ button:nth-child(2):hover {
 
 .about-section .content,
 .experience-section .content {
-    min-width: 500px;
+    min-width: 380px;
     max-width: 800px;
-    margin: 0 7rem;
+    margin: 0 6rem;
 }
 
 .about-section .content h2,
@@ -256,96 +250,88 @@ button:nth-child(2):hover {
 
 .about-section .content h1,
 .experience-section .content h1 {
-    max-width: 300px;
+    max-width: 140px;
 }
 
 @media only screen and (max-width: 600px) {
     .portfolio-container {
         flex-direction: column;
         justify-content: flex-start;
-        background-size: 120%;
+        background-size: 100%;
     }
-
     .navlist {
-        flex-direction: column;
         align-items: center;
         gap: 0.5rem;
         padding: 1rem;
-        background: #262525;
-        position: relative;
+        max-height: 8vh;
+        background: transparent;
+        color: liner-gradient(#fff, #3877ff);
+        
         z-index: 1;
     }
-
-    .navlist li {
-        margin: 0.5rem 0;
-        text-align: center;
-    }
-
     .navlist li a {
-        background: none;
         padding: 0.5rem 1rem;
     }
-
-    .left-container,
-    .right-container {
+    .left-container {
         width: 100%;
         padding: 2rem;
     }
-
     .right-container {
-        display: none;
+     display: none;
     }
-
     .icons {
         flex-direction: column;
         align-items: flex-start;
-        position: static;
-        top: auto;
-        left: auto;
-        transform: none;
-        margin-top: 0.5rem;
+        top: 25.5rem;
+        left: 1rem;
     }
-
-    .content {
-        margin: 0;
-    }
-
-    .btn-container {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 1rem;
-    }
-
     .navlist li a::after {
         display: none;
     }
-
     .design .circle:nth-child(1) {
         display: none;
     }
-
     .about-section .content,
     .experience-section .content {
-        margin: 0;
+        margin: 2rem;
         padding: 2rem;
         max-width: 150px;
     }
-
-    .about-section .content h1,
-    .experience-section .content h1,
     .about-section .content h2,
     .experience-section .content h2 {
+        font-size: 1rem;
+    }
+    .experience-section .content h1,
+    .about-section .content h1{
         font-size: 1.5rem;
     }
-
     .icons .fa-brands,
     .icons .fa-solid {
         font-size: 1.5rem;
     }
-   .about-section.circle:nth-child(2) {
-        max-width: 150px; /* Adjust the max-width as needed for mobile */
-        background-size: contain; /* Ensure the background image fits within the container */
-        background-position: top center; /* Center the background image at the top */
-        margin-top: .5rem; /* Add margin for spacing from the top */
+   .design .circle:nth-child(2) {
+        max-width: 200px; 
+        background-size: contain;  
+        left: 50%;
+        right: 50%;
+        top: 10.5rem;
     }
+    .content {
+        margin-left: 2rem;
+        margin-top: 12.5rem;
+        font-size:smaller;
+    }
+    .btn-container button {
+        border: .1rem solid #5db9ee;
+        font-size: 1rem;
+        padding: .8rem .4rem;
+        border-radius: .5rem;
+        cursor: pointer;
+        transition: all .5s ease;
+    }
+    
+.about-section,
+.experience-section {
+    padding: 1rem 0;
+}
 }
