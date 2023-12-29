@@ -259,7 +259,7 @@ button:nth-child(2):hover {
     max-width: 300px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
     .portfolio-container {
         flex-direction: column;
         justify-content: flex-start;
@@ -335,7 +335,7 @@ button:nth-child(2):hover {
     .experience-section .content h1,
     .about-section .content h2,
     .experience-section .content h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .icons .fa-brands,
