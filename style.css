@@ -348,4 +348,7 @@ button:nth-child(2):hover {
         background-size: contain;
         background-position: top;
     }
+    .content {
+        max-width: 500px;
+    }
 }
