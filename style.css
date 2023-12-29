@@ -342,13 +342,16 @@ button:nth-child(2):hover {
     .icons .fa-solid {
         font-size: 1.5rem;
     }
-
-    .circle:nth-child(2) {
-        max-width: 200px;
-        background-size: contain;
-        background-position: top;
+   .about-section.circle:nth-child(2) {
+        max-width: 200px; /* Adjust the max-width as needed for mobile */
+        background-size: contain; /* Ensure the background image fits within the container */
+        background-position: top center; /* Center the background image at the top */
+        margin-top: 2rem; /* Add margin for spacing from the top */
     }
-    .content {
-        max-width: 500px;
+    .about-section .content,
+    .experience-section .content {
+        margin: 0;
+        padding: 2rem;
+        max-width: 500px; /* Set the max-width to 500px */
     }
 }
