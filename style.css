@@ -124,40 +124,43 @@ meta[name="viewport"] {
     line-height: 1.8rem;
 }
 
-.btn-container button {
-    border: .1rem solid #5db9ee;
-    font-size: 1.1rem;
-    padding: .8rem 1.5rem;
-    border-radius: .5rem;
-    cursor: pointer;
-    transition: all .5s ease;
-}
-
 button:nth-child(1) {
     background: #5db9ee;
+}
+button:nth-child(1) a {
+    background: transparent;
     color: #262525;
 }
-
-button:nth-child(2) {
+button:nth-child(2), button:nth-child(2) a {
     background: transparent;
     color: #5db9ee;
-    margin-left: 2rem;
 }
 
-button:nth-child(1):hover {
+button:nth-child(1):hover{
     background: transparent;
     color: #5db9ee;
     box-shadow: 0 0 .25rem #fff, inset 0 0 .25rem #fff, 0 0 .5rem #3877ff, inset 0 0 .5rem #3877ff,
         0 0 1rem #3877ff, inset 0 0 1rem #3877ff;
 }
-
-button:nth-child(2):hover {
+button:nth-child(1):hover a{
+    background: transparent;
+    color: #5db9ee;
+    transition: all 1s ease;
+}
+button:nth-child(2):hover{
     background: #5db9ee;
     color: #262525;
     box-shadow: 0 0 .25rem #fff, inset 0 0 .25rem #fff, 0 0 .5rem #3877ff, inset 0 0 .5rem #3877ff,
         0 0 1rem #3877ff, inset 0 0 1rem #3877ff;
 }
-
+button:nth-child(2):hover a{
+    background: transparent;
+    color: #262525;
+    transition: all 1s ease;
+}
+button:nth-child(2){
+    margin-left: 2rem;
+}
 .design .circle {
     aspect-ratio: 1;
     position: absolute;
