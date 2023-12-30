@@ -124,6 +124,14 @@ meta[name="viewport"] {
     line-height: 1.8rem;
 }
 
+.btn-container button {
+    border: .1rem solid #5db9ee;
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: all .5s ease;
+}
 button:nth-child(1) {
     background: #5db9ee;
 }
