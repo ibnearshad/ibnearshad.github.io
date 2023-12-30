@@ -334,6 +334,7 @@ button:nth-child(2){
         margin-left: 2rem;
         margin-top: 12.5rem;
         font-size:smaller;
+        margin-right: 1rem;
     }
     .btn-container button {
         border: .1rem solid #5db9ee;
@@ -347,5 +348,21 @@ button:nth-child(2){
 .about-section,
 .experience-section {
     padding: 1rem 0;
+}
+    .lord-icon{
+    left: .7rem;
+    top: 61%;
+    gap: 3.9rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 2.9rem;
+    left: 90%;
+    top: 59%;    
+    font-size: 50px;
+    background: #3877ff;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 }
