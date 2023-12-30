@@ -59,33 +59,34 @@ meta[name="viewport"] {
     background: linear-gradient(-45deg, #3877ff, #262525 70%);
     width: 30%;
 }
-
-.icons .fa-brands,
-.icons .fa-solid {
-    background: linear-gradient(#fff, #3877ff);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 1.7rem;
-}
-
-.icons {
+.lord-icon{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 3rem;
     position: fixed;
     left: 5;
     top: 55%;
     transform: translate(0, -50%);
 }
-
-.icons .fa-brands:hover,
-.icons .fa-solid:hover {
+.icons{
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    gap: 9rem;
+    left: 7rem;
+    top: 95%;
+    transform: translate(0, -50%);
+    background: linear-gradient(#fff, #3877ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.9rem;
+}
+.icons:hover, .icons .fa-solid:hover{
     cursor: pointer;
     background: #3877ff;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: all 1s ease;
 }
 
 .content {
@@ -132,6 +133,7 @@ meta[name="viewport"] {
     cursor: pointer;
     transition: all .5s ease;
 }
+
 button:nth-child(1) {
     background: #5db9ee;
 }
@@ -169,6 +171,7 @@ button:nth-child(2):hover a{
 button:nth-child(2){
     margin-left: 2rem;
 }
+
 .design .circle {
     aspect-ratio: 1;
     position: absolute;
@@ -199,7 +202,7 @@ button:nth-child(2){
         0 0 4.5rem #3877ff, inset 0 0 4.5rem #3877ff;
 }
 
-.navlist li a::after {
+.navlist li a::after,.icons .fa-brands::after, .icons .fa-solid::after {
     content: '';
     position: absolute;
     bottom: -5px;
@@ -212,12 +215,12 @@ button:nth-child(2){
     transition: transform .5s;
 }
 
-.navlist li a:hover::after {
+.navlist li a:hover::after, .icons .fa-brands:hover::after, .icons .fa-solid:hover::after {
     transform: scalex(1);
     transform-origin: bottom left;
 }
 
-.navlist li a:hover {
+.navlist li a:hover,.icons .fa-brands:hover, .icons .fa-solid:hover {
     background: linear-gradient(#fff, #3877ff);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -235,7 +238,7 @@ button:nth-child(2){
     min-height: 100vh;
     background: linear-gradient(135deg, #262525 66%, #3877ff 34%);
     border-radius: 0 8px 8px 0;
-    padding: 5rem 0;
+    padding: 5rem 1rem;
 }
 
 .about-section .content,
